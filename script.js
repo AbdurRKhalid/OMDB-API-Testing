@@ -20,6 +20,9 @@ async function makeAPICall(movieName) {
 
 
 function renderData(movieTitle, movieYear, movieRated, movieReleased, moviePlot, moviePoster, movieType, movieActors, movieLanguage) {
+
+    var movieInfoSection = document.getElementById("movieInfo").classList.remove("hide");
+
     document.getElementById("moviePoster").src = moviePoster;
     document.getElementById("movieTitle").innerHTML = movieTitle;
     document.getElementById("movieRating").innerHTML = movieRated;
