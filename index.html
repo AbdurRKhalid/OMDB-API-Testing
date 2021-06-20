@@ -17,7 +17,7 @@
       <div class="p-5 mb-4 bg-dark text-white rounded-3">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">
-            Search Interesting Information About Your Favourite Movie
+            Search Interesting Information About Your Favourite Movie or Series.
           </h1>
           <p class="col-md-8 fs-4">
             With the Help of the OMDB API, we can have a look at the Interesting
@@ -29,7 +29,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <form action="">
+        <form onsubmit="event.preventDefault(); onSearchSubmit();" autocomplete="off"  action="">
           <div class="col-xl-12 col-lg-12 col-sm-12 text-center">
             <input
               type="text"
@@ -37,7 +37,7 @@
               id="movieName"
               class="form-control mx-auto"
               style="width: 55%"
-              placeholder="Enter the Name of the Movie"
+              placeholder="Enter the Name of the Movie or Series"
               required
             />
             <input
@@ -71,11 +71,11 @@
       </div>
     </div>
 
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>
